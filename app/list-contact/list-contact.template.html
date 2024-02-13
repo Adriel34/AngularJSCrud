@@ -1,0 +1,20 @@
+<div>
+  <div class="title-page">
+  <strong>Listagem de contatos:</strong>
+</div>
+
+  <ul>
+    <li class="user-row" ng-repeat="user in $ctrl.users">
+      <span ng-show="!user.editing">{{ user.name }}</span>
+      <input ng-model="user.updatedName" ng-show="user.editing" />
+      <div>
+      <button ng-click="$ctrl.deleteUser(user.id)" ng-show="!user.editing">Excluir</button>
+      <button ng-click="user.editing = !user.editing; user.updatedName = user.name" ng-show="!user.editing">Editar</button>
+      <button ng-click="$ctrl.saveChanges(user); user.editing = false" ng-show="user.editing">Salvar</button>
+    </div>
+    </li>
+  </ul>
+<div class="wrapper-button">
+  <button class="button-default" onclick="window.location.href='#!/contact/add'">Novo cadastro</button>
+</div>
+</div>

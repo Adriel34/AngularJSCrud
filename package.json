@@ -1,0 +1,23 @@
+{
+  "name": "angular-js-crud",
+  "version": "0.0.0",
+  "description": "AngularJS",
+  "dependencies": {
+    "angular": "1.8.x",
+    "angular-animate": "1.8.x",
+    "angular-resource": "1.8.x",
+    "angular-route": "1.8.x",
+    "bootstrap": "3.3.x",
+    "jquery": "3.3.x"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.8.x",
+    "cpx": "^1.5.0",
+    "http-server": "^0.11.1",
+    "protractor": "^5.4.4"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "live-server ./app --port=8000 --host=localhost"
+  }
+}
